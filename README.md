@@ -1,2 +1,5 @@
-# shop-finder
-A simple app example in python(flask) on backend and vuejs on frontend.
+# run application
+flask run
+open in browser http://127.0.0.1:5000/
+# run tests
+pytest

@@ -1,0 +1,477 @@
+[
+  {
+    "name": "St_Albans",
+    "postcode": "AL1 2RJ",
+    "shopType": "newsagent"
+  },
+  {
+    "name": "Hatfield",
+    "postcode": "AL9 5JP",
+    "shopType": "optician"
+  },
+  {
+    "name": "Worthing",
+    "postcode": "BN14 9GB",
+    "shopType": "newsagent"
+  },
+  {
+    "name": "Rustington",
+    "postcode": "BN16 3RT",
+    "shopType": "mall"
+  },
+  {
+    "name": "Eastbourne",
+    "postcode": "BN23 6QD",
+    "shopType": "mall"
+  },
+  {
+    "name": "Hove",
+    "postcode": "BN3 7PN",
+    "shopType": "baker"
+  },
+  {
+    "name": "Newhaven",
+    "postcode": "BN9 0AG",
+    "shopType": "baker"
+  },
+  {
+    "name": "Orpington",
+    "postcode": "BR5 3RP",
+    "shopType": "baker"
+  },
+  {
+    "name": "Chelmsford",
+    "postcode": "CM2 6XE",
+    "shopType": "baker"
+  },
+  {
+    "name": "Harlow",
+    "postcode": "CM20 2SX",
+    "shopType": "tea shop"
+  },
+  {
+    "name": "Croydon",
+    "postcode": "CR0 4NX",
+    "shopType": "tea shop"
+  },
+  {
+    "name": "Canterbury_Sturry_Road",
+    "postcode": "CT1 1DX",
+    "shopType": "tea shop"
+  },
+  {
+    "name": "Canterbury",
+    "postcode": "CT1 3TQ",
+    "shopType": "toy store"
+  },
+  {
+    "name": "Broadstairs",
+    "postcode": "CT10 2RQ",
+    "shopType": "toy store"
+  },
+  {
+    "name": "Dover",
+    "postcode": "CT16 3PS",
+    "shopType": "toy store"
+  },
+  {
+    "name": "Folkestone",
+    "postcode": "CT19 5SY",
+    "shopType": "toy store"
+  },
+  {
+    "name": "Crayford",
+    "postcode": "DA1 4LD",
+    "shopType": "toy store"
+  },
+  {
+    "name": "Gravesend",
+    "postcode": "DA11 0DQ",
+    "shopType": "toy store"
+  },
+  {
+    "name": "Chingford",
+    "postcode": "E4 8JA",
+    "shopType": "toy store"
+  },
+  {
+    "name": "Beckton",
+    "postcode": "E6 6LG",
+    "shopType": "toy store"
+  },
+  {
+    "name": "Enfield",
+    "postcode": "EN1 1TH",
+    "shopType": "optician"
+  },
+  {
+    "name": "Waltham_Abbey",
+    "postcode": "EN9 1BY",
+    "shopType": "toy store"
+  },
+  {
+    "name": "Farnborough",
+    "postcode": "GU14 7QL",
+    "shopType": "toy store"
+  },
+  {
+    "name": "Bagshot",
+    "postcode": "GU19 5DG",
+    "shopType": "florist"
+  },
+  {
+    "name": "Woking",
+    "postcode": "GU22 8BD",
+    "shopType": "petshop"
+  },
+  {
+    "name": "Alton",
+    "postcode": "GU34 2QS",
+    "shopType": "toy store"
+  },
+  {
+    "name": "Godalming",
+    "postcode": "GU7 1DR",
+    "shopType": "toy store"
+  },
+  {
+    "name": "Farnham",
+    "postcode": "GU9 9QJ",
+    "shopType": "toy store"
+  },
+  {
+    "name": "Ruislip",
+    "postcode": "HA4 0LN",
+    "shopType": "toy store"
+  },
+  {
+    "name": "High_Wycombe",
+    "postcode": "HP11 1FY",
+    "shopType": "toy store"
+  },
+  {
+    "name": "Aylesbury",
+    "postcode": "HP20 1DH",
+    "shopType": "toy store"
+  },
+  {
+    "name": "Hemel_Hempstead",
+    "postcode": "HP3 9AA",
+    "shopType": "toy store"
+  },
+  {
+    "name": "Ilford",
+    "postcode": "IG2 6BE",
+    "shopType": "toy store"
+  },
+  {
+    "name": "Walton_On_Thames",
+    "postcode": "KT12 2SS",
+    "shopType": "toy store"
+  },
+  {
+    "name": "Byfleet",
+    "postcode": "KT14 7NP",
+    "shopType": "toy store"
+  },
+  {
+    "name": "Luton",
+    "postcode": "LU1 3JH",
+    "shopType": "toy store"
+  },
+  {
+    "name": "Dunstable",
+    "postcode": "LU5 4XZ",
+    "shopType": "toy store"
+  },
+  {
+    "name": "Sittingbourne",
+    "postcode": "ME10 2XD",
+    "shopType": "toy store"
+  },
+  {
+    "name": "Maidstone",
+    "postcode": "ME20 7TP",
+    "shopType": "toy store"
+  },
+  {
+    "name": "Chatham",
+    "postcode": "ME5 9SQ",
+    "shopType": "toy store"
+  },
+  {
+    "name": "Gillingham",
+    "postcode": "ME8 0PU",
+    "shopType": "supermarket"
+  },
+  {
+    "name": "Bletchley",
+    "postcode": "MK1 1BN",
+    "shopType": "supermarket"
+  },
+  {
+    "name": "Buckingham",
+    "postcode": "MK18 1TB",
+    "shopType": "petshop"
+  },
+  {
+    "name": "Friern_Barnet",
+    "postcode": "N11 3PW",
+    "shopType": "supermarket"
+  },
+  {
+    "name": "Camden",
+    "postcode": "NW1 9EX",
+    "shopType": "optician"
+  },
+  {
+    "name": "Hendon",
+    "postcode": "NW9 7TH",
+    "shopType": "supermarket"
+  },
+  {
+    "name": "Chichester",
+    "postcode": "PO19 7YH",
+    "shopType": "supermarket"
+  },
+  {
+    "name": "Bognor_Regis",
+    "postcode": "PO22 9NF",
+    "shopType": "greengrocer"
+  },
+  {
+    "name": "Portsmouth",
+    "postcode": "PO3 5LZ",
+    "shopType": "greengrocer"
+  },
+  {
+    "name": "Havant",
+    "postcode": "PO9 1ND",
+    "shopType": "greengrocer"
+  },
+  {
+    "name": "Bracknell",
+    "postcode": "RG12 1EN",
+    "shopType": "greengrocer"
+  },
+  {
+    "name": "Reading",
+    "postcode": "RG2 0HB",
+    "shopType": "greengrocer"
+  },
+  {
+    "name": "Basingstoke",
+    "postcode": "RG22 4TT",
+    "shopType": "greengrocer"
+  },
+  {
+    "name": "Tilehurst",
+    "postcode": "RG30 1PR",
+    "shopType": "butcher"
+  },
+  {
+    "name": "Wokingham",
+    "postcode": "RG40 2NU",
+    "shopType": "butcher"
+  },
+  {
+    "name": "Winnersh",
+    "postcode": "RG41 5HH",
+    "shopType": "butcher"
+  },
+  {
+    "name": "Redhill",
+    "postcode": "RH1 6QL",
+    "shopType": "butcher"
+  },
+  {
+    "name": "Crawley",
+    "postcode": "RH11 7ST",
+    "shopType": "butcher"
+  },
+  {
+    "name": "Horsham",
+    "postcode": "RH12 1HR",
+    "shopType": "bookshop"
+  },
+  {
+    "name": "Burgess_Hill",
+    "postcode": "RH15 9QT",
+    "shopType": "bookshop"
+  },
+  {
+    "name": "East_Grinstead",
+    "postcode": "RH19 1QL",
+    "shopType": "petshop"
+  },
+  {
+    "name": "Dorking",
+    "postcode": "RH4 1RU",
+    "shopType": "bookshop"
+  },
+  {
+    "name": "Thurrock",
+    "postcode": "RM20 3LP",
+    "shopType": "hardware"
+  },
+  {
+    "name": "Romford",
+    "postcode": "RM7 0AN",
+    "shopType": "bookshop"
+  },
+  {
+    "name": "Dagenham",
+    "postcode": "RM9 6SJ",
+    "shopType": "optician"
+  },
+  {
+    "name": "Old_Kent_Road",
+    "postcode": "SE1 5BA",
+    "shopType": "bookshop"
+  },
+  {
+    "name": "Blackheath",
+    "postcode": "SE10 8DA",
+    "shopType": "bookshop"
+  },
+  {
+    "name": "Sydenham",
+    "postcode": "SE26 4PU",
+    "shopType": "shoe shop"
+  },
+  {
+    "name": "Thamesmead",
+    "postcode": "SE28 8RD",
+    "shopType": "hardware"
+  },
+  {
+    "name": "Charlton",
+    "postcode": "SE7 7TZ",
+    "shopType": "florist"
+  },
+  {
+    "name": "Eltham",
+    "postcode": "SE9 5LT",
+    "shopType": "shoe shop"
+  },
+  {
+    "name": "Hertford",
+    "postcode": "SG13 7RQ",
+    "shopType": "shoe shop"
+  },
+  {
+    "name": "Slough",
+    "postcode": "SL1 4XB",
+    "shopType": "shoe shop"
+  },
+  {
+    "name": "Maidenhead",
+    "postcode": "SL6 1AY",
+    "shopType": "hardware"
+  },
+  {
+    "name": "Southend_Victoria",
+    "postcode": "SS1 1PA",
+    "shopType": "shoe shop"
+  },
+  {
+    "name": "Basildon",
+    "postcode": "SS13 3BY",
+    "shopType": "petshop"
+  },
+  {
+    "name": "Basildon_Pipps_Hill",
+    "postcode": "SS14 3AF",
+    "shopType": "clothes shop"
+  },
+  {
+    "name": "Southend-on-Sea",
+    "postcode": "SS2 6FW",
+    "shopType": "clothes shop"
+  },
+  {
+    "name": "Rayleigh",
+    "postcode": "SS67UP",
+    "shopType": "clothes shop"
+  },
+  {
+    "name": "Battersea",
+    "postcode": "SW11 3RX",
+    "shopType": "clothes shop"
+  },
+  {
+    "name": "Wimbledon",
+    "postcode": "SW17 0BW",
+    "shopType": "clothes shop"
+  },
+  {
+    "name": "New_Malden",
+    "postcode": "SW20 0JQ",
+    "shopType": "clothes shop"
+  },
+  {
+    "name": "Sevenoaks",
+    "postcode": "TN14 5EW",
+    "shopType": "clothes shop"
+  },
+  {
+    "name": "Tunbridge_Wells",
+    "postcode": "TN2 3FB",
+    "shopType": "clothes shop"
+  },
+  {
+    "name": "Ashford",
+    "postcode": "TN23 7DH",
+    "shopType": "toy store"
+  },
+  {
+    "name": "Hastings",
+    "postcode": "TN37 7PB",
+    "shopType": "toy store"
+  },
+  {
+    "name": "Bexhill",
+    "postcode": "TN40 2JS",
+    "shopType": "toy store"
+  },
+  {
+    "name": "Feltham",
+    "postcode": "TW13 4EX",
+    "shopType": "newsagent"
+  },
+  {
+    "name": "Brentford",
+    "postcode": "TW8 8JW",
+    "shopType": "hardware"
+  },
+  {
+    "name": "Richmond",
+    "postcode": "TW9 1YB",
+    "shopType": "newsagent"
+  },
+  {
+    "name": "Hayes",
+    "postcode": "UB4 0TU",
+    "shopType": "newsagent"
+  },
+  {
+    "name": "Greenford",
+    "postcode": "UB6 0UW",
+    "shopType": "florist"
+  },
+  {
+    "name": "West_Drayton",
+    "postcode": "UB8 2TE",
+    "shopType": "petshop"
+  },
+  {
+    "name": "Watford",
+    "postcode": "WD17 2SF",
+    "shopType": "supermarket"
+  },
+  {
+    "name": "Borehamwood",
+    "postcode": "WD6 4PR",
+    "shopType": "supermarket"
+  }
+]

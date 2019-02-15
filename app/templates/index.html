@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+<body>
+
+<div id="app">
+    <div class="title-container">
+        <h1 class='title-element'> Welcome to your shop finder!</h1>
+        <iframe src="https://giphy.com/embed/ES4Vcv8zWfIt2" width="200" height="200" frameBorder="0" class="title-element giphy-embed" ></iframe>
+    </div>
+
+    <div class="search-container-selector">
+        <div class="input-container">
+            <select v-model="selectedType">
+                <option disabled value="">Please select one</option>
+                <option v-for="type in allStoreTypes">[[type]]</option>
+            </select>
+        </div>
+        <button
+            v-on:click="getSameTypeStores()"
+            :disabled="!selectedType"
+        >
+            Find by [[selectedType]]!
+        </button>
+    </div>
+
+    <div class="search-container-input">
+        <div class="input-container">
+            <input v-model="searchString" placeholder="Search.." v-on:keyup.enter="isStringOk(searchString) ? getMatchingStores() : '' ">
+            <div ng-if="suggestions.length>0" class="suggestions-container">
+                <p
+                    v-for="(city, index) in suggestions"
+                    :key="city.postcode + index"
+                    v-if="index<3"
+                >[[city.name]] &nbsp; &nbsp; [[city.postcode]]</p>
+            </div>
+        </div>
+        <button
+            v-on:click="getMatchingStores()"
+            :disabled="!isStringOk(searchString)"
+        >Find store!
+        </button>
+    </div>
+
+    <div class="list-container">
+        <p
+            class='list-element'
+            v-if="matches.length>0"
+            v-for="city in matches"
+        >[[city.name]] &nbsp; &nbsp; [[city.postcode]]
+        </p>
+    </div>
+    <div class="list-container" v-if="noMatch">
+        <p>Unfortunately, there were no matches.</p>
+    </div>
+    <div class="list-container" v-if="reqError">
+        <p>Unfortunately, something went wrong with the server. Please try again later!</p>
+    </div>
+
+</div>
+
+<script>
+var app = new Vue({
+    el: '#app',
+    delimiters : ['[[', ']]'],
+    data: {
+        searchString: '',
+        selectedType: '',
+
+        matches: [],
+        suggestions: [],
+        sameTypeStores: [],
+        allStoreTypes: [],
+        noMatch: false,
+        reqError: false,
+    },
+    beforeMount() {
+        this.getStoreTypes();
+    },
+    watch: {
+        searchString(newString, oldString) {
+            if (this.isStringOk(newString) && newString.length>1) {
+                this.getSuggestions(newString);
+            }
+            if (newString!=oldString) this.suggestions = [];
+        }
+    },
+    methods: {
+        getStoreTypes() {
+            var url = 'http://127.0.0.1:5000/get-store-types'
+            fetch(url)
+            .then(response => {
+                return response.json();
+            })
+            .then(results => {
+                this.allStoreTypes = results;
+            })
+        },
+        getMatchingStores(){
+            this.suggestions = [];
+            var url = 'http://127.0.0.1:5000/get-stores' +
+                '?searchString=' + this.searchString
+            fetch(url)
+            .then(response => {
+                return response.json();
+            })
+            .then(results => {
+                if (results.length == 0) {
+                    this.noMatch = true;
+                } else {
+                    this.noMatch = false;
+                }
+                this.matches = results;
+
+            })
+            .catch(error => {
+                console.error(error);
+                this.reqError = true;
+
+            });
+        },
+        getSameTypeStores() {
+            var url = 'http://127.0.0.1:5000/get-stores-by-type' +
+                '?searchByTypeString=' + this.selectedType
+            fetch(url)
+            .then(response => {
+                return response.json();
+            })
+            .then(results => {
+                this.sameTypeStores = results;
+
+            })
+            .catch(error => {
+
+            });
+        },
+        getSuggestions(searchString) {
+            var url = 'http://127.0.0.1:5000/get-stores' +
+                '?searchString=' + searchString
+            fetch(url)
+            .then(response => {
+                return response.json();
+            })
+            .then(results => {
+                this.suggestions = results;
+            });
+        },
+        isStringOk(searchString) {
+            return searchString.replace(/\s/g, '').length>0;
+        },
+    }
+})
+</script>
+<style>
+.title-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.title-container > .title-element {
+    margin: 2rem;
+    height: 200px;
+}
+.search-container-input {
+    margin: 2rem;
+    display: flex;
+    position: relative;
+}
+.search-container-selector {
+    margin: 2rem;
+    display: flex;
+}
+.suggestions-container {
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    background-color: #fff1f1;
+    width: 15.5rem;
+}
+.suggestions-container > p {
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+}
+.list-container {
+    margin: 2rem;
+}
+.list-container  > p.list-element {
+    margin: 0;
+    padding: 0.5rem;
+}
+.list-container  > p.list-element:nth-child(odd) {
+    background-color: lightpink;
+}
+input, select {
+    margin-right: 1rem;
+    width: 15rem;
+    height: 1.5rem;
+    border: 2px solid hotpink;
+    border-radius: 5px;
+}
+</style>
+
+</body>
+</html>
